@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jericho Santonia</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icons/icons8-google-code.svg">
+</head>
+<body class="">
+    <div id="overlay" class="hidden fixed inset-0 z-40 bg-gray-300 opacity-50 w-screen h-screen"></div>
+
+    <section id="homeSection">
+        <header class="flex justify-around items-center px-44 bg-transparent border-b-2 border-gray-200 max-w-full p-6">
+            <h1 class="font-semibold text-xl brand_name"><a href="#" class="hover:text-purple-500 duration-300">JERICHO SANTONIA</a></h1>
+
+            <ul class="flex space-x-24">
+                <li><a href="#" onclick="scrollToHome()" class="hover:text-purple-500 duration-300">HOME</a></li>
+                <li><a href="#" onclick="scrollToTool()" class="hover:text-purple-500 duration-300">TOOLS</a></li>
+                <li><a href="#" onclick="scrollToAbout()" class="hover:text-purple-500 duration-300">ABOUT ME</a></li>
+                <li><a href="#" onclick="scrollToWork()" class="hover:text-purple-500 duration-300">WORK</a></li>
+            </ul>
+
+            <button onclick="toggleForm()" class="flex justify-center items-center space-x-3 hover:text-purple-700 duration-300"> 
+                <div class="bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 p-2 rounded-full w-fit">
+                    <img src="/assets/icons/right-arrow.svg" alt="Right Arrow" class="w-8">
+                </div>
+                <div>
+                    <h2><a href="#">Let's Chat!</a></h2>
+                </div>
+            </button>
+
+        </header>
+    </section>
+
+
+    <section class="flex justify-center items-center px-80 mt-24 grid-cols-12">
+        <div class="w-6/12 space-y-10">
+            <h1 class="text-9xl font-bold">Full-Stack <span class="text-purple-500">Dev</span>eloper</h1>
+
+            <div class="space-y-10 w-9/12">
+                <summary>
+                    I'm Jericho, a seasoned full-stack developer with a knack for turning issues and 
+                    opportunities into user-driven, eye-pleasing, and functional web applications & designs. <br><br> 
+                    I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">web-dev</span> & <span class="text-purple-500">software engineering</span> opportunities.
+                </summary>
+                
+
+                <div class="border-2 border-black flex justify-between items-center rounded-full px-5 py-2">
+                    <div>
+                        <img class="border-none rounded-full w-16 h-16" src="/assets/img/myImg_smol.webp">
+                    </div>
+
+                    <div>
+                        <h2 class="font-bold text-xl" id="timeNow"></h2>
+                    </div>
+
+                    <a onclick="toggleForm()" href="#" class="hover:bg-purple-500 hover:text-white duration-300 rounded-3xl px-2 py-1">
+                        <div class="flex items-center justify-center space-x-3">
+                            <div class="bg-lime-400 border-black border-2 p-2 rounded-full w-fit">
+                                <img src="/assets/icons/right-arrow.svg" alt="Right Arrow" class="w-8">
+                            </div>
+                            <h2 class="font-medium text-lg">Reach Out</h2>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+
+        </div>  
+
+        <div class="w-6/12 flex justify-end relative">
+            <div class="absolute left-44 top-4 -inset-5 bg-purple-500  rounded-t-full shadow-2xl   w-9/12"></div>
+
+            <img src="/assets/img/imgcrop.JPG" class="rounded-t-full border-2 border-black shadow-2xl z-10 w-9/12">
+        </div>
+    </section>
+
+    
+    <section id="toolSection">
+        <div class="bg-gray-900 mt-40 min-w-full h-110 flex justify-center items-center">
+            <div class="flex space-x-8 justify-center items-center text-white border-2 border-purple-400 border-dashed rounded-2xl p-6 w-8/12">
+                <div class="w-5/12 space-y-8 text-slate-200">
+                    <h1 class="font-bold text-3xl">Tools I use for my daily dev work</h1>
+                    <p>The best way to stay on top of my work is by using these essential tools, 
+                        either working solo or collaboratively in team.</p>
+                </div>
+
+                <div class="w-6/12 space-y-4"> 
+                    <div class="flex space-x-4 w-fit">
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-react.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-tailwindcss-100.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-javascript.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-css3.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-bootstrap.svg">
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-4 w-fit">
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-django.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-python.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-php.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-shopify.svg">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-figma.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workSection">
+        <div class="min-w-full h-110 bg-white text-black grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-4xl">See What I Work On</h1>
+                    <p>Get an inside look into my development process and see what's come along.</p>
+                </div>    
+
+                <div class="flex justify-center items-center space-x-16 w-full text-center">
+
+                    <a onclick="scrollToWebDev()" class="grid justify-center items-center space-y-4 ">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img src="assets/icons/icons8-google-code.svg">
+                        </div>
+                        <h2 class="text-xl">Web Development</h2>
+                    </a>
+
+                    <a onclick="scrollToUIUX()" class="grid justify-center items-center space-y-4">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img src="assets/icons/icons8-figma-128.svg">
+                        </div>
+                        <h2 class="text-xl">UI/UX Design</h2>
+                    </a>
+
+                    <a onclick="scrollToAppDev()" class="grid justify-center items-center space-y-4">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img src="assets/icons/icons8-google-mobile.svg">
+                        </div>
+                        <h2 class="text-xl">App Development</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="webDevSection">
+        <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-4xl">Web Development</h1>
+                    <p>React, TailwindCSS, Bootstrap, JavaScript, HTML5, CSS3, Shopify, Drupal, WordPress</p>
+                </div>    
+
+                <center>
+                    <div id="first_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    
+                                    <div class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/icons8-google-code.svg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Libs Library</h2>
+                                        <p>Libs is a Library Management Platform that enables accessibility to students that is on a rush on their daily student-life.</p>
+                                    </div>
+
+                                    <a href="https://www.zeuspowersystems.com.ph/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/zeuspowersystems.png" class="">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Zeus Power Systems</h2>
+                                        <p>Zeus is a generator company that supports its customers in all the phases of installation, repair, and maintenance of generator sets and related services.</p>
+                                    
+                                    </a>
+
+                                    <a href="https://www.vikingassetmanagement.com/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/viking_website.png">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Viking Asset Management Website</h2>
+                                        <p>Viking is a company that relates to stocks, options, bonds and futures. They also provide outsourcing services similar to Fiver.</p>
+                                    </a>
+
+                                    <a class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/customerportal.png">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Viking Asset Customer Portal</h2>
+                                        <p>Viking's Portal is used to provide accessibility for clients on Viking's services. The customer portal is currently on its final phase of development.</p>
+                                    </a>
+
+                                    <a href="https://purebloom.ch/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                          <img src="assets/img/purebloom.png" alt="PureBloom Skincare">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">PureBloom Skincare</h2>
+                                        <p>PureBloom is a skin-care company that sells locally-made products from the Philippines to Europe.</p>
+                                      </a>
+
+
+                                    <div class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/icons8-google-code.svg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">ES Aircon Services</h2>
+                                        <p>ES is an aircon cleaning start-up that aims to provide a fresh, clean, and healthy air for its client's homes.</p>
+                                    </div>
+
+                                    <a href="https://knowledgebase.ibuild.ph/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/ibuildknowledgebase.png">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">iBuild.PH Knowledgebase</h2>
+                                        <p>iBuild's Knowledgebase is a website that aims to provide knowledge and guide for Drupal professionals that seeks answers to their Drupal development stuff.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="UiUxSection">
+        <div class="min-w-full h-full p-16 bg-gray-900 text-slate-200 grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-4xl">UI/UX Design</h1>
+                    <p>Figma, Wireframes, Layouts, Prototypes, User Experience, UX Psychology, XML</p>
+                </div>    
+
+                <center>
+                    <div id="second_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    
+                                    <a href="https://drive.google.com/file/d/1WEYzgYORHgKI7rkIuV6NJk_B7JeKiIb2/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/banayad.png" class="object-fill h-full w-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Banayad Mobile App Design</h2>
+                                        <p>Banayad is a mobile-application solely made for cyclist in Metro Manila, PH. It's like  GMaps & Waze but more on cycling activities.</p>
+                                    </a>
+
+                                    <a href="https://www.figma.com/proto/fMlshVFyhMt6W5toIWiXPy/Viking-Website-Design-PT1?type=design&t=TEKuAo7hs2DWB9YJ-1&scaling=min-zoom&page-id=0%3A1&node-id=1-158&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/vikingredesign.png" class="object-cover w-full h-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Viking Asset's Website Redesign</h2>
+                                        <p>Viking is a company that relates to stocks, options, bonds and futures. They also provide outsourcing services similar to Fiver.</p>
+                                    </a>
+
+                                    <a href="https://www.figma.com/proto/GorTRCnckQsO4XY3jic20F/PureBloom-E-Commerce-Website?type=design&node-id=1-4204&t=l6c9eOl2TTnS05kb-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/pureBredesign.png" class="object-cover w-full h-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">PureBloom Skincare</h2>
+                                        <p>PureBloom is a skin-care company that sells locally-made products from the Philippines to Europe.</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="appDevSection">
+        <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-4xl">App Development</h1>
+                    <p>Kotlin, Firebase, MySQL, APIs, Mapbox SDK, Google Maps APIs</p>
+                </div>    
+
+                <center>
+                    <div id="third_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    
+                                    <div class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/icons8-google-code.svg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Banayad</h2>
+                                        <p>Banayad is a mobile-application solely made for cyclist in Metro Manila, PH. It's like  GMaps & Waze but more on cycling activities.</p>
+                                    </div>
+
+                                    <div class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/icons8-google-code.svg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Cycling Speedometer</h2>
+                                        <p>Cycling Speedometer is an app for cyclists that currently do not have speedometers but want to track their cycling activity efficiently.</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center>
+        <section id="aboutSection" class="flex justify-center items-center px-80 py-20 grid-cols-12 w-full">
+            <div class="w-12/12 space-y-10">
+                <h1 class="text-7xl font-bold">About <span class="text-purple-500">Jericho</span></h1>
+
+                <div class="space-y-10 w-9/12 text-start">
+                    <summary>
+                        As a seasoned Full-stack Developer, I have a strong passion in creating eye-pleasing and user-friendly web applications.
+                        I contribute to developing new features, new designs, and optimising existing web or app functions from start to finish. 
+                        This includes developing from scratch using front-end and back-end tools simultaneously. But before developing such things, I first create wireframes, prototypes and dev-ready final layouts.<br><br>
+
+                        I also developed applications that would significantly improve, bring positive results, and help the communites and companies I work with. Best example is when I created Banayad with a team of devs, which is a cycling navigation app same to Google Maps. 
+
+                        <br><br>I live in Caloocan, Philippines, where I spend my free time exploring the country's beautiful nature and searching for majectic views and good vibes. One of my favorite things to do is cycling and gaming where I can interact with different sets of people. <br><br> 
+                        
+                        I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">web-dev</span> & <span class="text-purple-500">software engineering</span> opportunities.
+                    </summary>
+                    
+
+                    <div onclick="toggleForm()" class="border-2 w-3/12 hover:bg-purple-500 hover:text-white duration-300  border-black flex justify-between items-center rounded-full ">
+                        <a href="#" class="rounded-3xl w-full py-2">
+                            <div class="flex items-center justify-center space-x-3">
+                                <div class="bg-lime-400 border-black border-2 p-2 rounded-full w-fit">
+                                    <img src="/assets/icons/right-arrow.svg" alt="Right Arrow" class="w-8">
+                                </div>
+                                <h2 class="font-medium text-lg">Contact Jericho</h2>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+
+            </div>  
+
+        </section>
+    </center>   
+
+    <footer>
+        <div class="flex justify-around items-center px-32 bg-gray-300 min-w-full p-6">
+            <h1 class="font-semibold text-base brand_name"><a href="#" class="hover:text-purple-500 duration-300">© 2023 Jericho Santonia. All Rights Reserved.</a></h1>
+
+            <ul class="flex">
+                
+                <li><a onclick="scrollToHome()" class="hover:text-purple-500 duration-300 cursor-pointer">BACK TO TOP</a></li>
+            </ul>
+
+            <div class=" flex justify-center items-center space-x-3 hover:text-purple-700 duration-300"> 
+                <a href="https://github.com/jerichoo0010" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 p-2 rounded-full w-fit">
+                    <img src="assets/icons/icons8-github.svg" alt="Github Profile" class="w-8">
+                </a>
+                <a href="https://www.linkedin.com/in/jericho-santonia/" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 p-2 rounded-full w-fit">
+                    <img src="assets/icons/icons8-linkedin.svg" alt="LinkedIn Profile" class="w-8">
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Pop Up Form -->
+    <div class="hidden" id="popupForm">
+        <div class="bg-white shadow-2xl fixed inset-0 m-auto  z-50 w-96 h-fit p-4 rounded-md">
+          <div class="flex flex-col items-center h-full">
+            <h2 class="mb-6 font-bold text-xl">Let's <span class="text-purple-500">Work</span> Together!</h2>
+            <form class="w-full">
+              <div class='mb-4'>
+                <label for='text1' class='block text-sm font-medium text-gray-700'>Your Name</label>
+                <input type='text' id='text1' placeholder='Name' class='border p-2 rounded-md w-full'/>
+              </div>
+      
+              <div class='mb-4'>
+                <label for='email1' class='block text-sm font-medium text-gray-700'>Your Email</label>
+                <input type='email' id='email1' placeholder='Email' class='border p-2 rounded-md w-full' />
+              </div>
+      
+              <div class='mb-4'>
+                <label for='textarea1' class='block text-sm font-medium text-gray-700'>Do you have any message?</label>
+                <textarea id='textarea1' placeholder='Message' class='border h-40 p-2 rounded-md w-full'></textarea>
+              </div>
+      
+              <div class='mb-4'>
+                <label for='select1' class='block text-sm font-medium text-gray-700'>What role are you hiring for?</label>
+                <select id='select1' class='border p-2 rounded-md w-full'>
+                  <option value=''>Select Here</option>
+                  <option value='Web Developer'>Web Developer</option>
+                  <option value='UI/UX'>UI/UX Designer</option>
+                  <option value='Software Developer'>Software Developer</option>
+                </select>
+              </div>
+              
+              <div class='flex justify-center items-center space-x-4'>
+                <button onclick="toggleForm()" class='border-2 border-gray-800 text-black px-2 py-1 rounded-full'>Close Form</button>
+                <button class='bg-purple-500 hover:bg-purple-300 hover:text-black duration-300 text-white px-4 py-2 rounded-full'>Reach Out</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script type="text/javascript">
+        var splide = new Splide( '#first_splide', {
+            perPage: 3,
+            perMove: 1,
+            gap: '2rem',
+            type   : 'loop',
+            autoplay: true,
+            pagination: false,
+            drag: false,
+        });
+
+        var splide2 = new Splide( '#second_splide', {
+            perPage: 3,
+            perMove: 1,
+            gap: '2rem',
+            type   : 'loop',
+            autoplay: true,
+            pagination: false,
+            drag: false,
+        });
+
+        var splide3 = new Splide( '#third_splide', {
+            perPage: 1,
+            perMove: 1,
+            gap: '2rem',
+            type   : 'loop',
+            autoplay: true,
+            pagination: false,
+            drag: false,
+        });
+
+        splide.mount();
+        splide2.mount();
+        splide3.mount();
+    </script>
+
+</body>
+</html>
