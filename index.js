@@ -78,3 +78,22 @@ function showImage(element) {
   function hideImage() {
     document.getElementById('imageModal').style.display = 'none';
   }
+
+
+//Hamburger Menu
+const hamMenu = document.querySelector(".ham-menu");
+const toggleBtn = document.querySelectorAll(".toggle-btn")
+
+const offScreenMenu = document.querySelector(".homeSectionHeader");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+
+toggleBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+      hamMenu.classList.toggle("active");
+      offScreenMenu.classList.toggle("active");
+    });
+  });

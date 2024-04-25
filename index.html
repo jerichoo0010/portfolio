@@ -18,14 +18,14 @@
     <div id="overlay" class="hidden fixed inset-0 z-40 bg-gray-300 opacity-50 w-screen h-screen"></div>
 
     <section id="homeSection">
-        <header class="flex justify-around items-center px-44 bg-transparent border-b-2 border-gray-200 max-w-full p-6">
+        <header class="homeSectionHeader  text-white lg:text-black flex flex-col justify-center items-center space-y-10 fixed h-screen w-full top-0  sm:max-w-6xl md:relative xl:flex xl:flex-row xl:justify-around xl:h-full xl:items-center xl:px-44 xl:space-y-0 bg-transparent border-b-2 border-gray-200 xl:max-w-full xl:p-6">
             <h1 class="font-semibold text-xl brand_name"><a href="#" class="hover:text-purple-500 duration-300">JERICHO SANTONIA</a></h1>
 
-            <ul class="flex space-x-24">
-                <li><a href="#" onclick="scrollToHome()" class="hover:text-purple-500 duration-300">HOME</a></li>
-                <li><a href="#" onclick="scrollToTool()" class="hover:text-purple-500 duration-300">TOOLS</a></li>
-                <li><a href="#" onclick="scrollToAbout()" class="hover:text-purple-500 duration-300">ABOUT ME</a></li>
-                <li><a href="#" onclick="scrollToWork()" class="hover:text-purple-500 duration-300">WORK</a></li>
+            <ul class="space-y-6 xl:flex xl:space-x-24 xl:space-y-0">
+                <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToHome()" class="hover:text-purple-500 duration-300 ">HOME</a></li>
+                <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToTool()" class="hover:text-purple-500 duration-300 ">TOOLS</a></li>
+                <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToAbout()" class="hover:text-purple-500 duration-300 ">ABOUT ME</a></li>
+                <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToWork()" class="hover:text-purple-500 duration-300 ">WORK</a></li>
             </ul>
 
             <button onclick="toggleForm()" class="flex justify-center items-center space-x-3 hover:text-purple-700 duration-300"> 
@@ -40,12 +40,25 @@
         </header>
     </section>
 
+    <nav class="mobileNav lg:hidden flex p-3 px-5 border-b border-solid border-white" style="align-items: center;">
+        <h1 class="font-semibold text-xl brand_name_mobile" ><a href="#" class=" duration-300 text-gray-100" >JERICHO SANTONIA</a></h1>
 
-    <section class="flex justify-center items-center px-80 mt-24 grid-cols-12">
-        <div class="w-6/12 space-y-10">
-            <h1 class="text-9xl font-bold">Full-Stack <span class="text-purple-500">Dev</span>eloper</h1>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-            <div class="space-y-10 w-9/12">
+
+    <section class="2xl:flex 2xl:justify-center 2xl:items-center 2xl:px-80 mt-24 grid-cols-12">
+        <div class="xl:w-6/12 xl:space-y-10 p-6 xl:p-0">
+            
+
+            <div class="xl:space-y-10 xl:w-9/12 w-full flex flex-col justify-center items-center xl:flex-none xl:justify-start xl:items-start">
+                <div class="mb-8 mt-2 xl:mt-0 xl:mb-0">
+                    <h1 class="text-6xl 2xl:text-9xl font-bold" style="white-space: nowrap;">Full-Stack</h1>
+                    <h1 class="text-6xl 2xl:text-9xl font-bold"><span class="text-purple-500">Dev</span>eloper</h1>
+                </div>
                 <summary>
                     I'm Jericho, a seasoned full-stack developer with a knack for turning issues and 
                     opportunities into user-driven, eye-pleasing, and functional web applications & designs. <br><br> 
@@ -53,21 +66,19 @@
                 </summary>
                 
 
-                <div class="border-2 border-black flex justify-between items-center rounded-full px-5 py-2">
-                    <div>
-                        <img class="border-none rounded-full w-16 h-16" src="/assets/img/myImg_smol.webp">
-                    </div>
+                <div class="border-2 border-black flex justify-between items-center rounded-full px-10 xl:space-x-6 space-x-8 py-2 mt-6">
+                    
 
                     <div>
-                        <h2 class="font-bold text-xl" id="timeNow"></h2>
+                        <h2 class="font-bold xl:text-xl text-lg" id="timeNow" style="white-space: nowrap;"></h2>
                     </div>
 
-                    <a onclick="toggleForm()" href="#" class="hover:bg-purple-500 hover:text-white duration-300 rounded-3xl px-2 py-1">
+                    <a onclick="toggleForm()" href="#" class="hover:bg-purple-500 hover:text-white duration-300 rounded-3xl px-4 py-1">
                         <div class="flex items-center justify-center space-x-3">
                             <div class="bg-lime-400 border-black border-2 p-2 rounded-full w-fit">
                                 <img src="/assets/icons/right-arrow.svg" alt="Right Arrow" class="w-8">
                             </div>
-                            <h2 class="font-medium text-lg">Reach Out</h2>
+                            <h2 class="font-medium xl:text-lg text-lg2" style="white-space: nowrap;">Reach Out</h2>
                         </div>
                     </a>    
                 </div>
@@ -75,24 +86,23 @@
 
         </div>  
 
-        <div class="w-6/12 flex justify-end relative">
-            <div class="absolute left-44 top-4 -inset-5 bg-purple-500  rounded-t-full shadow-2xl   w-9/12"></div>
-
-            <img src="/assets/img/imgcrop.JPG" class="rounded-t-full border-2 border-black shadow-2xl z-10 w-9/12">
-        </div>
+        <div class="w-8/12 xl:w-6/12 flex justify-end relative xl:ml-0 ml-4">
+            <div class="absolute left-22 xl:left-44 top-4 -inset-5 bg-purple-500  rounded-t-full shadow-2xl w-9/12"></div>
+                <img src="/assets/img/imgcrop.JPG" class="rounded-t-full border-2 border-black shadow-2xl  z-10 w-9/12">
+            </div>
     </section>
 
     
     <section id="toolSection">
-        <div class="bg-gray-900 mt-40 min-w-full h-110 flex justify-center items-center">
-            <div class="flex space-x-8 justify-center items-center text-white border-2 border-purple-400 border-dashed rounded-2xl p-6 w-8/12">
-                <div class="w-5/12 space-y-8 text-slate-200">
-                    <h1 class="font-bold text-3xl">Tools I use for my daily dev work</h1>
+        <div class="bg-gray-900 mt-20 xl:mt-40 min-w-full h-110 xl:h-110 flex justify-center items-center">
+            <div class=" xl:flex xl:space-x-8 justify-center items-center text-white border-2 border-purple-400 border-dashed rounded-2xl p-6 h-5/6 w-11/12 xl:w-8/12">
+                <div class="w-full xl:w-5/12 space-y-8 text-slate-200 text-center xl:text-start">
+                    <h1 class="font-bold text-lg xl:text-3xl">Tools I use for my daily dev work</h1>
                     <p>The best way to stay on top of my work is by using these essential tools, 
                         either working solo or collaboratively in team.</p>
                 </div>
 
-                <div class="w-6/12 space-y-4"> 
+                <div class="w-full xl:w-6/12 space-y-4 xl:mt-0 mt-10"> 
                     <div class="flex space-x-4 w-fit">
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
                             <img src="assets/icons/icons8-react.svg">
@@ -134,34 +144,34 @@
     </section>
 
     <section id="workSection">
-        <div class="min-w-full h-110 bg-white text-black grid justify-center items-center text-center">
+        <div class="min-w-full h-96 xl:h-110 bg-white text-black grid justify-center items-center text-center">
             <div class="space-y-10">
                 <div class="space-y-4">
-                    <h1 class="text-center font-bold text-4xl">See What I Work On</h1>
-                    <p>Get an inside look into my development process and see what's come along.</p>
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">See What I Work On</h1>
+                    <p class="mx-5">Get an inside look into my development process and see what's come along.</p>
                 </div>    
 
-                <div class="flex justify-center items-center space-x-16 w-full text-center">
+                <div class="flex justify-center items-center xl:space-x-16 w-full text-center">
 
-                    <a onclick="scrollToWebDev()" class="grid justify-center items-center space-y-4 ">
-                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
-                            <img src="assets/icons/icons8-google-code.svg">
+                    <a onclick="scrollToWebDev()" class="flex flex-col justify-center items-center space-y-4 mx-2">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center xl:p-2 rounded-2xl">
+                            <img class="w-16 h-20 xl:w-full xl:h-32" src="assets/icons/icons8-google-code.svg">
                         </div>
-                        <h2 class="text-xl">Web Development</h2>
+                        <h2 class="text-base xl:text-xl">Web Development</h2>
                     </a>
 
-                    <a onclick="scrollToUIUX()" class="grid justify-center items-center space-y-4">
-                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
-                            <img src="assets/icons/icons8-figma-128.svg">
+                    <a onclick="scrollToUIUX()" class="flex flex-col justify-center items-center space-y-4 mx-2">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img class="w-16 h-16 xl:w-full xl:h-full" src="assets/icons/icons8-figma-128.svg">
                         </div>
-                        <h2 class="text-xl">UI/UX Design</h2>
+                        <h2 class="text-base xl:text-xl">UI/UX Design</h2>
                     </a>
 
-                    <a onclick="scrollToAppDev()" class="grid justify-center items-center space-y-4">
-                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full flex justify-center items-center p-2 rounded-2xl">
-                            <img src="assets/icons/icons8-google-mobile.svg">
+                    <a onclick="scrollToAppDev()" class="flex flex-col justify-center items-center space-y-4 mx-2">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img class="w-16 h-16 xl:w-full xl:h-32" src="assets/icons/icons8-google-mobile.svg">
                         </div>
-                        <h2 class="text-xl">App Development</h2>
+                        <h2 class="text-base xl:text-xl">App Development</h2>
                     </a>
                 </div>
             </div>
@@ -173,8 +183,8 @@
         <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
             <div class="space-y-10">
                 <div class="space-y-4">
-                    <h1 class="text-center font-bold text-4xl">Web Development</h1>
-                    <p>React, TailwindCSS, Bootstrap, JavaScript, HTML5, CSS3, Shopify, Drupal, WordPress</p>
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">Web Development</h1>
+                    <p class="">React, TailwindCSS, Bootstrap, JavaScript, HTML5, CSS3, Shopify, Drupal, WordPress</p>
                 </div>    
 
                 <center>
@@ -255,7 +265,7 @@
         <div class="min-w-full h-full p-16 bg-gray-900 text-slate-200 grid justify-center items-center text-center">
             <div class="space-y-10">
                 <div class="space-y-4">
-                    <h1 class="text-center font-bold text-4xl">UI/UX Design</h1>
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">UI/UX Design</h1>
                     <p>Figma, Wireframes, Layouts, Prototypes, User Experience, UX Psychology, XML</p>
                 </div>    
 
@@ -304,7 +314,7 @@
         <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
             <div class="space-y-10">
                 <div class="space-y-4">
-                    <h1 class="text-center font-bold text-4xl">App Development</h1>
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">App Development</h1>
                     <p>Kotlin, Firebase, MySQL, APIs, Mapbox SDK, Google Maps APIs</p>
                 </div>    
 
@@ -341,9 +351,9 @@
     </section>
 
     <center>
-        <section id="aboutSection" class="flex justify-center items-center px-80 py-20 grid-cols-12 w-full">
+        <section id="aboutSection" class="2xl:flex 2xl:justify-center 2xl:items-center 2xl:px-80 2xl:py-20 py-10 2xl:grid-cols-12 w-full">
             <div class="w-12/12 space-y-10">
-                <h1 class="text-7xl font-bold">About <span class="text-purple-500">Jericho</span></h1>
+                <h1 class="text-4xl 2xl:text-7xl font-bold">About <span class="text-purple-500">Jericho</span></h1>
 
                 <div class="space-y-10 w-9/12 text-start">
                     <summary>
@@ -358,17 +368,19 @@
                         I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">web-dev</span> & <span class="text-purple-500">software engineering</span> opportunities.
                     </summary>
                     
-
-                    <div onclick="toggleForm()" class="border-2 w-3/12 hover:bg-purple-500 hover:text-white duration-300  border-black flex justify-between items-center rounded-full ">
-                        <a href="#" class="rounded-3xl w-full py-2">
+                    <div class="flex justify-center items-center">
+                    <div onclick="toggleForm()" class="border-2 w-8/12 xl:w-3/12 hover:bg-purple-500 hover:text-white duration-300  border-black flex justify-between items-center rounded-full ">
+                        <a href="#" class="hover:bg-purple-500 hover:text-white w-full duration-300 rounded-3xl px-4 py-1">
                             <div class="flex items-center justify-center space-x-3">
                                 <div class="bg-lime-400 border-black border-2 p-2 rounded-full w-fit">
                                     <img src="/assets/icons/right-arrow.svg" alt="Right Arrow" class="w-8">
                                 </div>
-                                <h2 class="font-medium text-lg">Contact Jericho</h2>
+                                <h2 class="font-medium xl:text-lg text-lg2" style="white-space: nowrap;">Contact Jericho</h2>
                             </div>
-                        </a>    
+                        </a>      
                     </div>
+                </div>
+
                 </div>
 
             </div>  
@@ -377,19 +389,19 @@
     </center>   
 
     <footer>
-        <div class="flex justify-around items-center px-32 bg-gray-300 min-w-full p-6">
-            <h1 class="font-semibold text-base brand_name"><a href="#" class="hover:text-purple-500 duration-300">© 2023 Jericho Santonia. All Rights Reserved.</a></h1>
+        <div class="flex justify-around items-center xl:px-32 bg-gray-300 min-w-full p-6">
+            <h1 class="font-semibold text-base brand_name_mobile"><a href="#" class="hover:text-purple-500 duration-300 text-sm xl:text-base" style="white-space: nowrap;">© 2023 Jericho Santonia.<br> All Rights Reserved.</a></h1>
 
             <ul class="flex">
                 
-                <li><a onclick="scrollToHome()" class="hover:text-purple-500 duration-300 cursor-pointer">BACK TO TOP</a></li>
+                <li><a onclick="scrollToHome()" class="hover:text-purple-500 duration-300 cursor-pointer xl:text-base text-sm text-center flex justify-center mx-3">BACK TO TOP</a></li>
             </ul>
 
             <div class=" flex justify-center items-center space-x-3 hover:text-purple-700 duration-300"> 
-                <a href="https://github.com/jerichoo0010" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 p-2 rounded-full w-fit">
+                <a href="https://github.com/jerichoo0010" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 xl:p-2 p-1 rounded-full w-fit">
                     <img src="assets/icons/icons8-github.svg" alt="Github Profile" class="w-8">
                 </a>
-                <a href="https://www.linkedin.com/in/jericho-santonia/" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 p-2 rounded-full w-fit">
+                <a href="https://www.linkedin.com/in/jericho-santonia/" target="_blank" class="cursor-pointer bg-lime-400 hover:bg-purple-400 duration-300 border-black border-2 xl:p-2 p-1 rounded-full w-fit">
                     <img src="assets/icons/icons8-linkedin.svg" alt="LinkedIn Profile" class="w-8">
                 </a>
             </div>
