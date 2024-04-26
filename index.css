@@ -206,4 +206,12 @@ summary {
         top: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+
+    .splide__arrow {
+      margin-right: -40px !important;
+      margin-left: -40px !important;
+      background-color: rgb(163 230 53 / var(--tw-bg-opacity)) !important;
+      width: 50px !important;
+      height: 50px !important;
+  }
 }
