@@ -18,10 +18,10 @@
     <div id="overlay" class="hidden fixed inset-0 z-40 bg-gray-300 opacity-50 w-screen h-screen"></div>
 
     <section id="homeSection">
-        <header class="homeSectionHeader  text-white lg:text-black flex flex-col justify-center items-center space-y-10 fixed h-screen w-full top-0  sm:max-w-6xl md:relative xl:flex xl:flex-row xl:justify-around xl:h-full xl:items-center xl:px-44 xl:space-y-0 bg-transparent border-b-2 border-gray-200 xl:max-w-full xl:p-6">
+        <header class="homeSectionHeader  text-white lg:text-black flex flex-col justify-center items-center space-y-10 lg:space-y-0 lg:py-7 sm:fixed h-screen w-full top-0  sm:max-w-6xl lg:relative lg:flex lg:flex-row lg:justify-around lg:h-full lg:items-center xl:px-44 xl:space-y-0 bg-transparent border-b-2 border-gray-200 xl:max-w-full xl:p-6">
             <h1 class="font-semibold text-xl brand_name"><a href="#" class="hover:text-purple-500 duration-300">JERICHO SANTONIA</a></h1>
 
-            <ul class="space-y-6 xl:flex xl:space-x-24 xl:space-y-0">
+            <ul class="space-y-6 lg:flex lg:justify-center lg:items-center lg:space-y-0 lg:space-x-7 xl:space-x-24 xl:space-y-0">
                 <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToHome()" class="hover:text-purple-500 duration-300 ">HOME</a></li>
                 <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToTool()" class="hover:text-purple-500 duration-300 ">TOOLS</a></li>
                 <li class="toggle-btn flex space-x-2"><div class="md:hidden">- </div><a href="#" onclick="scrollToAbout()" class="hover:text-purple-500 duration-300 ">ABOUT ME</a></li>
@@ -40,7 +40,7 @@
         </header>
     </section>
 
-    <nav class="mobileNav lg:hidden flex p-3 px-5 border-b border-solid border-white" style="align-items: center;">
+    <nav class="mobileNav lg:hidden flex p-3 px-5 md:px-10 border-b border-solid border-white" style="align-items: center;">
         <h1 class="font-semibold text-xl brand_name_mobile" ><a href="#" class=" duration-300 text-gray-100" >JERICHO SANTONIA</a></h1>
 
         <div class="ham-menu">
@@ -50,16 +50,22 @@
     </nav>
 
 
-    <section class="2xl:flex 2xl:justify-center 2xl:items-center 2xl:px-80 mt-24 grid-cols-12">
-        <div class="xl:w-6/12 xl:space-y-10 p-6 xl:p-0">
+    <section class="2xl:flex 2xl:justify-center 2xl:items-center 2xl:px-80 lg:mt-10 md:mt-16 xl:mt-20 mt-24 grid-cols-12">
+        <div class="xl:w-6/12 xl:space-y-10 px-6 py-4 xl:p-0">
             
 
-            <div class="xl:space-y-10 xl:w-9/12 w-full flex flex-col justify-center items-center xl:flex-none xl:justify-start xl:items-start">
-                <div class="mb-8 mt-2 xl:mt-0 xl:mb-0">
-                    <h1 class="text-6xl 2xl:text-9xl font-bold" style="white-space: nowrap;">Full-Stack</h1>
+            <div class="xl:space-y-10 md:space-y-8 md:mb-5 xl:w-9/12 w-full flex flex-col justify-center items-center xl:flex-none xl:justify-start xl:items-start">
+                <div class="md:hidden lg:block mb-8 md:mb-0 mt-0 xl:mt-0 xl:mb-0">
+                    <h1 class="text-6xl 2xl:text-9xl font-bold" style="white-space: nowrap;">Full-Stack </h1>
                     <h1 class="text-6xl 2xl:text-9xl font-bold"><span class="text-purple-500">Dev</span>eloper</h1>
                 </div>
-                <summary>
+
+                <div class="sm:hidden md:block lg:hidden mb-8 md:mb-0 mt-0 xl:mt-0 xl:mb-0">
+                    <h1 class="text-6xl 2xl:text-9xl font-bold" style="white-space: nowrap;">Full-Stack <span class="text-purple-500">Dev</span>eloper</h1>
+                </div>
+
+
+                <summary class="md:mx-10">
                     I'm Jericho, a seasoned full-stack developer with a knack for turning issues and 
                     opportunities into user-driven, eye-pleasing, and functional web applications & designs. <br><br> 
                     I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">web-dev</span> & <span class="text-purple-500">software engineering</span> opportunities.
@@ -86,15 +92,15 @@
 
         </div>  
 
-        <div class="w-8/12 xl:w-6/12 flex justify-end relative xl:ml-0 ml-4">
-            <div class="absolute left-22 xl:left-44 top-4 -inset-5 bg-purple-500  rounded-t-full shadow-2xl w-9/12"></div>
+        <div class="w-8/12 xl:w-6/12 flex justify-end relative xl:ml-0 md:ml-10 ml-4">
+            <div class="absolute left-22 md:left-40 xl:left-44 top-4 -inset-5 bg-purple-500  rounded-t-full shadow-2xl w-9/12"></div>
                 <img src="/assets/img/imgcrop.JPG" class="rounded-t-full border-2 border-black shadow-2xl  z-10 w-9/12">
             </div>
     </section>
 
     
     <section id="toolSection">
-        <div class="bg-gray-900 mt-20 xl:mt-40 min-w-full h-110 xl:h-110 flex justify-center items-center">
+        <div class="bg-gray-900 mt-20 xl:mt-40 min-w-full h-110 md:h-120 xl:h-110 flex justify-center items-center">
             <div class=" xl:flex xl:space-x-8 justify-center items-center text-white border-2 border-purple-400 border-dashed rounded-2xl p-6 h-5/6 w-11/12 xl:w-8/12">
                 <div class="w-full xl:w-5/12 space-y-8 text-slate-200 text-center xl:text-start">
                     <h1 class="font-bold text-lg xl:text-3xl">Tools I use for my daily dev work</h1>
@@ -188,7 +194,7 @@
                 </div>    
 
                 <center>
-                    <div id="first_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                    <div id="first_splide" class="splide relative grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
                             <div class="splide__track">
                                 <div class="splide__list">
                                     
@@ -207,7 +213,24 @@
                                         </div>
                                         <h2 class="text-xl font-semibold">Zeus Power Systems</h2>
                                         <p>Zeus is a generator company that supports its customers in all the phases of installation, repair, and maintenance of generator sets and related services.</p>
-                                    
+                                    </a>
+
+                                    <a href="https://settlement.linehaul.info/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/linehaul.png" class="">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Linehaul's Settlements Website</h2>
+                                        <p>Linehaul caters services to the trucking industry. I've developed the overall frontend of their settlements website.</p>
+                                    </a>
+
+                                    <a href="https://myetech.net/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        
+                                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/img/myetech.png" class="">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">MyeTech's Website</h2>
+                                        <p>MyeTech is a blog website where people can find content about the latest trends. Developed the entirety of the website from start to finish.</p>
                                     </a>
 
                                     <a href="https://www.vikingassetmanagement.com/" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
@@ -270,7 +293,7 @@
                 </div>    
 
                 <center>
-                    <div id="second_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                    <div id="second_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
                             <div class="splide__track">
                                 <div class="splide__list">
                                     
@@ -319,7 +342,7 @@
                 </div>    
 
                 <center>
-                    <div id="third_splide" class="splide grid space-x-16 w-8/12 text-start" aria-label="Splide Carousel"> 
+                    <div id="third_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
                             <div class="splide__track">
                                 <div class="splide__list">
                                     
@@ -369,7 +392,7 @@
                     </summary>
                     
                     <div class="flex justify-center items-center">
-                    <div onclick="toggleForm()" class="border-2 w-8/12 xl:w-3/12 hover:bg-purple-500 hover:text-white duration-300  border-black flex justify-between items-center rounded-full ">
+                    <div onclick="toggleForm()" class="border-2 w-8/12 md:w-5/12 xl:w-3/12 hover:bg-purple-500 hover:text-white duration-300  border-black flex justify-between items-center rounded-full ">
                         <a href="#" class="hover:bg-purple-500 hover:text-white w-full duration-300 rounded-3xl px-4 py-1">
                             <div class="flex items-center justify-center space-x-3">
                                 <div class="bg-lime-400 border-black border-2 p-2 rounded-full w-fit">
@@ -464,6 +487,11 @@
             autoplay: true,
             pagination: false,
             drag: false,
+            breakpoints: {
+        768: {
+            perPage: 1, // Change perPage to 1 for screens equal to or smaller than 768px (mobile)
+        }
+    }
         });
 
         var splide2 = new Splide( '#second_splide', {
@@ -474,6 +502,11 @@
             autoplay: true,
             pagination: false,
             drag: false,
+            breakpoints: {
+        768: {
+            perPage: 1, // Change perPage to 1 for screens equal to or smaller than 768px (mobile)
+        }
+    }
         });
 
         var splide3 = new Splide( '#third_splide', {
@@ -484,6 +517,11 @@
             autoplay: true,
             pagination: false,
             drag: false,
+            breakpoints: {
+        768: {
+            perPage: 1, // Change perPage to 1 for screens equal to or smaller than 768px (mobile)
+        }
+    }
         });
 
         splide.mount();
