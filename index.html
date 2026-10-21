@@ -9,6 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
@@ -66,9 +68,9 @@
 
 
                 <summary class="md:mx-10">
-                    I'm Jericho, a seasoned full-stack developer with a knack for turning issues and 
+                    I'm Jericho, a seasoned <span class="text-purple-500">full-stack developer</span> and <span class="text-purple-500">AI Automation Engineer</span> with a knack for turning issues and 
                     opportunities into functional automated workflows and software applications. <br><br> 
-                    I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">automation</span> & <span class="text-purple-500">software engineering</span> opportunities.
+                    I am currently <span class="text-purple-500">looking</span> for <span class="text-purple-500">AI automation</span> & <span class="text-purple-500">software engineering</span> opportunities.
                 </summary>
                 
 
@@ -111,6 +113,12 @@
                 <div class="w-full xl:w-6/12 space-y-4 xl:mt-0 mt-10 flex flex-col justify-center items-center"> 
                     <div class="flex space-x-4 w-fit">
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/icons8-claude.png" class="w-24">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
+                            <img src="assets/icons/n8n.png" class="w-24">
+                        </div>
+                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
                             <img src="assets/icons/icons8-react.svg">
                         </div>
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
@@ -118,12 +126,6 @@
                         </div>
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
                             <img src="assets/icons/icons8-javascript.svg">
-                        </div>
-                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
-                            <img src="assets/icons/zapier.png" class="w-24">
-                        </div>
-                        <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
-                            <img src="assets/icons/n8n.png" class="w-24">
                         </div>
                     </div>
 
@@ -135,7 +137,7 @@
                             <img src="assets/icons/icons8-python.svg">
                         </div>
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
-                            <img src="assets/icons/icons8-php.svg">
+                            <img src="assets/icons/icons8-openai.png">
                         </div>
                         <div class="border-2 border-white hover:border-black duration-300 cursor-pointer w-fit p-2 flex justify-center rounded-full">
                             <img src="assets/icons/icons8-shopify.svg">
@@ -159,6 +161,13 @@
 
                 <div class="flex justify-center items-center xl:space-x-16 w-full text-center">
 
+                    <a onclick="scrollToAppDev()" class="flex flex-col justify-center items-center space-y-4 mx-2">
+                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center p-2 rounded-2xl">
+                            <img class="w-16 h-16 xl:w-full xl:h-32" src="assets/icons/icons8-automation-96.png">
+                        </div>
+                        <h2 class="text-base xl:text-xl">AI Automation</h2>
+                    </a>
+
                     <a onclick="scrollToWebDev()" class="flex flex-col justify-center items-center space-y-4 mx-2">
                         <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center xl:p-2 rounded-2xl">
                             <img class="w-16 h-20 xl:w-full xl:h-32" src="assets/icons/icons8-google-code.svg">
@@ -173,17 +182,139 @@
                         <h2 class="text-base xl:text-xl">UI/UX Design</h2>
                     </a>
 
-                    <a onclick="scrollToAppDev()" class="flex flex-col justify-center items-center space-y-4 mx-2">
-                        <div class="border-2 border-gray-600 hover:border-purple-400 duration-300 cursor-pointer w-20 xl:w-full flex justify-center items-center p-2 rounded-2xl">
-                            <img class="w-16 h-16 xl:w-full xl:h-32" src="assets/icons/icons8-automation-96.png">
-                        </div>
-                        <h2 class="text-base xl:text-xl">Automation</h2>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+
+    
+    <section id="appDevSection">
+        <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">AI Automation</h1>
+                    <p>n8n, Claude, Zapier, Make.com, JavaScript, Python, AI Agents, OpenAI</p>
+                </div>    
+
+                <center>
+                    <div id="third_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
+                            <div class="splide__track">
+                                <div class="splide__list">
+
+                                    <a href="https://drive.google.com/drive/folders/19u2fjLhHcG9zqUmaOz14vTInAenGBqT3?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/ugc-ai-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">UGC AI Content Creator</h2>
+                                        <p>A fully automated system that converts ideas from a form to a UGC AI content for Social Media Marketing use like Tiktok, Reels, etc.</p>
+                                        <p>Tools used: <u>n8n, Pixverse, Fal.ai, Python, FFmpeg, Cloudinary</u></p>
+                                    </a>
+
+                                    
+                                    
+                                    <a href="https://drive.google.com/file/d/1NYYd-oavQtTErOMGIZF9AdS6YKRtXJ7w/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/faceless-n8n-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">AI Faceless Video Creator</h2>
+                                        <p>A fully automated system that turns short prompts into faceless videos using AI-generated scripts, voiceovers, images, and video assembly—triggered via Google Sheets and managed through n8n.</p>
+                                        <p>Tools used: <u>n8n, ElevenLabs, Python, Stable Diffusion/Hugging Face, FFmpeg, Google Cloud</u></p>
+                                    </a>
+
+                                    <a href="#" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/wpcontentcreator-n8n-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Content Creator for WordPress</h2>
+                                        <p>An automated workflow that creates content with enhanced prompt. Content is posted via WordPress.</p>
+                                        <p>Tools used: <u>n8n, WordPress, Google Sheets, Prompt Engineering, OpenAI (LLMs)</u></p>
+                                    </a>
+
+                                    <a href="https://drive.google.com/file/d/1etePF4HPwma8_8LAFKsSpXoKa7sTjb98/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/lead-enrichment-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Lead Enrichment Workflow</h2>
+                                        <p>An automated workflow that enriches leads stored in Airtable using AI (LLMs), generates personalized outreach messages, and pushes them to Instantly for email campaigns. It also updates lead details and statuses back in Airtable in real time.</p>
+                                        <p>Tools used: <u>n8n, Airtable, Instantly.ai, OpenAI (LLMs)</u></p>
+                                    </a>
+
+                                    <a href="#" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/leadoutreach-n8n-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">School/Case Managers Outreach System</h2>
+                                        <p>An automated workflow that automates the process of outreach for different purposes. Emails are sent periodically to find leads.</p>
+                                        <p>Tools used: <u>n8n, Google Mail, Google Sheets, HTTP Requests</u></p>
+                                    </a>
+
+                                    <a href="https://drive.google.com/file/d/1IjyLCmce8GZ6OfwT5Mp3uweRr8WXf0oq/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
+                                            <img src="assets/icons/fullsaas-n8n-preview.png" class="w-110 rounded-lg">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Lead Scraper and Filter System</h2>
+                                        <p>An automated workflow that extracts leads from Apollo then adds it to Airtable. From there, another flow is made to determine the leads that are good fit.</p>
+                                        <p>Tools used: <u>n8n, Airtable, Apollo, Apify, Instantly, OpenAI (LLMs)</u></p>
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="UiUxSection">
+        <div class="min-w-full h-full p-16 bg-gray-900 text-slate-200 grid justify-center items-center text-center">
+            <div class="space-y-10">
+                <div class="space-y-4">
+                    <h1 class="text-center font-bold text-2xl xl:text-4xl">UI/UX Design</h1>
+                    <p>Figma, Wireframes, Layouts, Prototypes, User Experience, UX Psychology, XML</p>
+                </div>    
+
+                <center>
+                    <div id="second_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    
+                                    <a href="https://drive.google.com/file/d/1WEYzgYORHgKI7rkIuV6NJk_B7JeKiIb2/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/banayad.png" class="object-fill h-full w-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Banayad Mobile App Design</h2>
+                                        <p>Banayad is a mobile-application solely made for cyclist in Metro Manila, PH. It's like  GMaps & Waze but more on cycling activities.</p>
+                                    </a>
+
+                                    <a href="https://www.figma.com/proto/fMlshVFyhMt6W5toIWiXPy/Viking-Website-Design-PT1?type=design&t=TEKuAo7hs2DWB9YJ-1&scaling=min-zoom&page-id=0%3A1&node-id=1-158&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/vikingredesign.png" class="object-cover w-full h-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">Viking Asset's Website Redesign</h2>
+                                        <p>Viking is a company that relates to stocks, options, bonds and futures. They also provide outsourcing services similar to Fiver.</p>
+                                    </a>
+
+                                    <a href="https://www.figma.com/proto/GorTRCnckQsO4XY3jic20F/PureBloom-E-Commerce-Website?type=design&node-id=1-4204&t=l6c9eOl2TTnS05kb-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
+                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
+                                            <img src="assets/img/pureBredesign.png" class="object-cover w-full h-full">
+                                        </div>
+                                        <h2 class="text-xl font-semibold">PureBloom Skincare</h2>
+                                        <p>PureBloom is a skin-care company that sells locally-made products from the Philippines to Europe.</p>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                </center>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="webDevSection">
         <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
@@ -283,136 +414,6 @@
         </div>
     </section>
 
-
-    <section id="UiUxSection">
-        <div class="min-w-full h-full p-16 bg-gray-900 text-slate-200 grid justify-center items-center text-center">
-            <div class="space-y-10">
-                <div class="space-y-4">
-                    <h1 class="text-center font-bold text-2xl xl:text-4xl">UI/UX Design</h1>
-                    <p>Figma, Wireframes, Layouts, Prototypes, User Experience, UX Psychology, XML</p>
-                </div>    
-
-                <center>
-                    <div id="second_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
-                            <div class="splide__track">
-                                <div class="splide__list">
-                                    
-                                    <a href="https://drive.google.com/file/d/1WEYzgYORHgKI7rkIuV6NJk_B7JeKiIb2/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
-                                            <img src="assets/img/banayad.png" class="object-fill h-full w-full">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">Banayad Mobile App Design</h2>
-                                        <p>Banayad is a mobile-application solely made for cyclist in Metro Manila, PH. It's like  GMaps & Waze but more on cycling activities.</p>
-                                    </a>
-
-                                    <a href="https://www.figma.com/proto/fMlshVFyhMt6W5toIWiXPy/Viking-Website-Design-PT1?type=design&t=TEKuAo7hs2DWB9YJ-1&scaling=min-zoom&page-id=0%3A1&node-id=1-158&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
-                                            <img src="assets/img/vikingredesign.png" class="object-cover w-full h-full">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">Viking Asset's Website Redesign</h2>
-                                        <p>Viking is a company that relates to stocks, options, bonds and futures. They also provide outsourcing services similar to Fiver.</p>
-                                    </a>
-
-                                    <a href="https://www.figma.com/proto/GorTRCnckQsO4XY3jic20F/PureBloom-E-Commerce-Website?type=design&node-id=1-4204&t=l6c9eOl2TTnS05kb-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center overflow-hidden rounded-2xl">
-                                            <img src="assets/img/pureBredesign.png" class="object-cover w-full h-full">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">PureBloom Skincare</h2>
-                                        <p>PureBloom is a skin-care company that sells locally-made products from the Philippines to Europe.</p>
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-                </center>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="appDevSection">
-        <div class="min-w-full h-full p-16 bg-purple-100 text-black grid justify-center items-center text-center">
-            <div class="space-y-10">
-                <div class="space-y-4">
-                    <h1 class="text-center font-bold text-2xl xl:text-4xl">Automation</h1>
-                    <p>n8n, Claude, Zapier, Make.com, JavaScript, Python, AI Agents, OpenAI</p>
-                </div>    
-
-                <center>
-                    <div id="third_splide" class="splide grid xl:space-x-16 xl:w-8/12 text-start" aria-label="Splide Carousel"> 
-                            <div class="splide__track">
-                                <div class="splide__list">
-
-                                    <a href="https://drive.google.com/drive/folders/19u2fjLhHcG9zqUmaOz14vTInAenGBqT3?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/ugc-ai-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">UGC AI Content Creator</h2>
-                                        <p>A fully automated system that converts ideas from a form to a UGC AI content for Social Media Marketing use like Tiktok, Reels, etc.</p>
-                                        <p>Tools used: <u>n8n, Pixverse, Fal.ai, Python, FFmpeg, Cloudinary</u></p>
-                                    </a>
-
-                                    
-                                    
-                                    <a href="https://drive.google.com/file/d/1NYYd-oavQtTErOMGIZF9AdS6YKRtXJ7w/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/faceless-n8n-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">AI Faceless Video Creator</h2>
-                                        <p>A fully automated system that turns short prompts into faceless videos using AI-generated scripts, voiceovers, images, and video assembly—triggered via Google Sheets and managed through n8n.</p>
-                                        <p>Tools used: <u>n8n, ElevenLabs, Python, Stable Diffusion/Hugging Face, FFmpeg, Google Cloud</u></p>
-                                    </a>
-
-                                    <a href="#" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/wpcontentcreator-n8n-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">Content Creator for WordPress</h2>
-                                        <p>An automated workflow that creates content with enhanced prompt. Content is posted via WordPress.</p>
-                                        <p>Tools used: <u>n8n, WordPress, Google Sheets, Prompt Engineering, OpenAI (LLMs)</u></p>
-                                    </a>
-
-                                    <a href="https://drive.google.com/file/d/1etePF4HPwma8_8LAFKsSpXoKa7sTjb98/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/lead-enrichment-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">Lead Enrichment Workflow</h2>
-                                        <p>An automated workflow that enriches leads stored in Airtable using AI (LLMs), generates personalized outreach messages, and pushes them to Instantly for email campaigns. It also updates lead details and statuses back in Airtable in real time.</p>
-                                        <p>Tools used: <u>n8n, Airtable, Instantly.ai, OpenAI (LLMs)</u></p>
-                                    </a>
-
-                                    <a href="#" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/leadoutreach-n8n-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">School/Case Managers Outreach System</h2>
-                                        <p>An automated workflow that automates the process of outreach for different purposes. Emails are sent periodically to find leads.</p>
-                                        <p>Tools used: <u>n8n, Google Mail, Google Sheets, HTTP Requests</u></p>
-                                    </a>
-
-                                    <a href="https://drive.google.com/file/d/1IjyLCmce8GZ6OfwT5Mp3uweRr8WXf0oq/view?usp=sharing" target="_blank" class="splide__slide grid justify-center items-center space-y-4 w-96">
-                                        <div class="border-2 border-white hover:border-purple-400 duration-300 cursor-pointer w-full h-72 flex justify-center items-center p-2 rounded-2xl">
-                                            <img src="assets/icons/fullsaas-n8n-preview.png" class="w-110 rounded-lg">
-                                        </div>
-                                        <h2 class="text-xl font-semibold">Lead Scraper and Filter System</h2>
-                                        <p>An automated workflow that extracts leads from Apollo then adds it to Airtable. From there, another flow is made to determine the leads that are good fit.</p>
-                                        <p>Tools used: <u>n8n, Airtable, Apollo, Apify, Instantly, OpenAI (LLMs)</u></p>
-                                    </a>
-
-
-                                </div>
-                            </div>
-                        </div>
-                </center>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <center>
         <section id="aboutSection" class="2xl:flex 2xl:justify-center 2xl:items-center 2xl:px-80 2xl:py-20 py-10 2xl:grid-cols-12 w-full">
             <div class="w-12/12 space-y-10">
@@ -420,14 +421,16 @@
 
                 <div class="space-y-10 w-9/12 text-start">
                     <summary>
-                        As a seasoned Full-stack Developer, I have a strong passion in creating time-saving and user-friendly AI automations and web applications.<br><br>
+                        As a seasoned <span class="text-purple-500">Full-stack Developer</span> and <span class="text-purple-500">AI Automation Engineer</span>, I have a strong passion in creating time-saving and user-friendly AI automations and web applications.<br><br>
 
                         I've created multiple AI automations and web applications that have helped businesses and communities to save time, increase productivity, and improve their overall operations. I have a strong understanding of the latest technologies and trends in the field, and I am always looking for new ways to improve my skills and knowledge.<br><br>
 
                         I contribute to developing new features, new designs, and optimising existing web or app functions from start to finish. 
                         This includes developing from scratch using front-end and back-end tools simultaneously. But before developing such things, I first create wireframes, prototypes and dev-ready final layouts.<br><br>
 
-                        I also developed applications that would significantly improve, bring positive results, and help the communites and companies I work with. Best example is when I created Banayad with a team of devs, which is a cycling navigation app same to Google Maps. 
+                        I also developed applications that would significantly improve, bring positive results, and help the communites and companies I work with. <br><br>
+                        
+                        Best example is when I built the Contracts/Specs/RFP Analyzer Project. This project is for a company for the wastewater industry. They have biddings, project specs, drawings, that is processed every month and needs to know its opportunities, brands, and technical details. I built and end to end automation that handles this using n8n, Gemini, Supabase, Lovable and integrated several external APIs. Dashboards are built using Lovable and Supabase for database and external codes. Automations are handled in n8n. 
 
                         <br><br>I live in Caloocan, Philippines, where I spend my free time exploring the country's beautiful nature and searching for majectic views and good vibes. One of my favorite things to do is cycling and gaming where I can interact with different sets of people. <br><br> 
                         
@@ -477,48 +480,62 @@
 
 
     <!-- Pop Up Form -->
-    <div class="hidden" id="popupForm">
-        <div class="bg-white shadow-2xl fixed inset-0 m-auto  z-50 w-96 h-fit p-4 rounded-md">
-          <div class="flex flex-col items-center h-full">
-            <h2 class="mb-6 font-bold text-xl">Let's <span class="text-purple-500">Work</span> Together!</h2>
+    
+    
+<div class="hidden" id="popupForm">
+  <div class="bg-white shadow-2xl fixed inset-0 m-auto z-50 w-96 max-w-[90%] h-fit p-6 rounded-md">
 
-            <h3>Email: <b>jerichoosantoniaa@gmail.com</b></h3><br>
+    <div class="flex flex-col items-center">
 
-            
-            <form class="w-full">
-              <div class='mb-4'>
-                <label for='text1' class='block text-sm font-medium text-gray-700'>Your Name</label>
-                <input type='text' id='text1' placeholder='Name' class='border p-2 rounded-md w-full'/>
-              </div>
-      
-              <div class='mb-4'>
-                <label for='email1' class='block text-sm font-medium text-gray-700'>Your Email</label>
-                <input type='email' id='email1' placeholder='Email' class='border p-2 rounded-md w-full' />
-              </div>
-      
-              <div class='mb-4'>
-                <label for='textarea1' class='block text-sm font-medium text-gray-700'>Do you have any message?</label>
-                <textarea id='textarea1' placeholder='Message' class='border h-40 p-2 rounded-md w-full'></textarea>
-              </div>
-      
-              <div class='mb-4'>
-                <label for='select1' class='block text-sm font-medium text-gray-700'>What role are you hiring for?</label>
-                <select id='select1' class='border p-2 rounded-md w-full'>
-                  <option value=''>Select Here</option>
-                  <option value='Web Developer'>Web Developer</option>
-                  <option value='UI/UX'>UI/UX Designer</option>
-                  <option value='Software Developer'>Software Developer</option>
-                </select>
-              </div>
-              
-              <div class='flex justify-center items-center space-x-4'>
-                <button onclick="toggleForm()" class='border-2 border-gray-800 text-black px-2 py-1 rounded-full'>Close Form</button>
-                <button class='bg-purple-500 hover:bg-purple-300 hover:text-black duration-300 text-white px-4 py-2 rounded-full'>Reach Out</button>
-            </div>
-            </form>
-          </div>
-        </div>
+      <h2 class="mb-6 font-bold text-xl text-center">
+        Let's <span class="text-purple-500">Work</span> Together!
+      </h2>
+
+      <!-- Contact Details -->
+      <div class="w-full mb-8" style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+
+        <!-- Email -->
+        <a href="mailto:jericho.santoniax@gmail.com"
+           class="text-gray-700 hover:text-purple-500 duration-300"
+           style="display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none;">
+
+          <i class="fa-solid fa-envelope text-2xl text-purple-500"
+             style="width: 26px; text-align: center; flex-shrink: 0;"></i>
+
+          <span class="text-sm">
+            jericho.santoniax@gmail.com
+          </span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jericho-santonia/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="text-gray-700 hover:text-purple-500 duration-300"
+           style="display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none;">
+
+          <i class="fa-brands fa-linkedin text-2xl text-purple-500"
+             style="width: 26px; text-align: center; flex-shrink: 0;"></i>
+
+          <span class="text-sm">
+            Connect with me on LinkedIn
+          </span>
+        </a>
+
       </div>
+
+      <!-- Close Button -->
+      <button type="button"
+              onclick="toggleForm()"
+              class="border-2 border-gray-800 text-black px-5 py-2 rounded-full hover:bg-gray-100 duration-300">
+        Close
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
       
     
     
